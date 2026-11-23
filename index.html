@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>С Днём Рождения, Мама!</title>
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="particles-canvas"></canvas>
+
+    <div class="container">
+        <header>
+            <div class="subtitle">Самый тёплый день в году</div>
+            <h1>С Днём Рождения, Мама!</h1>
+        </header>
+
+        <section class="wish-box">
+            <p>
+                Спасибо тебе за твоё бесконечное тепло, поддержку и за то, что ты просто есть. 
+                Самое главное моё пожелание — береги себя, улыбайся как можно чаще и живи ещё очень-очень долго, счастливо и здорово!
+            </p>
+            <span class="wish-highlight">Я тебя очень сильно люблю ❤️</span>
+        </section>
+
+        <section class="cake-section">
+            <h2>Загадай желание</h2>
+            <p class="cake-hint">Включи микрофон и подуй на экран, чтобы задуть свечи (или просто нажми на торт)</p>
+
+            <div class="cake-wrapper" id="cake" title="Нажми, если нет микрофона">
+                <div class="candles">
+                    <div class="candle"><div class="wick"></div><div class="flame"></div><div class="smoke"></div></div>
+                    <div class="candle"><div class="wick"></div><div class="flame"></div><div class="smoke"></div></div>
+                    <div class="candle"><div class="wick"></div><div class="flame"></div><div class="smoke"></div></div>
+                </div>
+                <div class="cake-top"><div class="frosting"></div></div>
+                <div class="cake-bottom"><div class="frosting"></div></div>
+                <div class="plate"></div>
+            </div>
+
+            <button class="btn" id="mic-btn">
+                <span>🎙️ Включить микрофон и дунуть</span>
+            </button>
+            <div class="mic-status" id="mic-status"></div>
+        </section>
+
+        <section class="cards-section">
+            <h2>Несколько слов о тебе</h2>
+            <p class="cards-subtitle">Нажми на каждую карточку, чтобы открыть</p>
+
+            <div class="cards-grid">
+                <div class="flip-card" onclick="this.classList.toggle('flipped')">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="card-icon">🌸</div>
+                            <span>Нажми сюда</span>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>Твоя доброта и забота делают этот мир намного теплее и уютнее каждый день.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card" onclick="this.classList.toggle('flipped')">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="card-icon">✨</div>
+                            <span>И сюда</span>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>Ты самая мудрая, сильная и понимающая. Рядом с тобой всегда спокойно на душе.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card" onclick="this.classList.toggle('flipped')">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="card-icon">☀️</div>
+                            <span>Открой меня</span>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>Твоя улыбка способна разогнать любые тучи. Пусть поводов для неё будет как можно больше!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card" onclick="this.classList.toggle('flipped')">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="card-icon">💖</div>
+                            <span>И последняя</span>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>Просто знай: ты самая лучшая мама на свете, и я всегда рядом.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
